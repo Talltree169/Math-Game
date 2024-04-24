@@ -1,0 +1,160 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: MPS;
+
+}
+body {
+  background-color: #f4c531;
+}
+
+@font-face {
+  font-family: MPS;
+  src: url(Fontver1.12.otf);
+}
+.container {
+  background-color: #ffffff;
+  width: 90%;
+  max-width: 31.25em;
+  position: absolute;
+  transform: translate(-50%, -50%);
+  top: 50%;
+  left: 50%;
+  padding: 5em 3em;
+  border-radius: 0.5em;
+  box-shadow: rgba(0, 0, 0, 0.2) 0vw 2vw 4vw;
+
+}
+.container h3 {
+  font-size: 1.2em;
+  font-family: MPS;
+  color: #23234c;
+  text-align: center;
+  font-weight: 500;
+  line-height: 1.8em;
+}
+.container #submit-btn {
+  font-size: 1.2em;
+  font-weight: 500;
+  display: block;
+  margin: 0 auto;
+  background-color: #f4c531;
+  border-radius: 0.3em;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  font-family: MPS;
+  color: #23234c;
+  padding: 0.6em 2em;
+  box-shadow: rgba(0, 0, 0, 0.1) 0vw 0.5vw 1vw;
+
+}
+#error-msg {
+  text-align: center;
+  margin-top: 1em;
+  background-color: #ffdde0;
+  font-family: MPS;
+  color: #d62f2f;
+  padding: 0.2em 0;
+}
+.container #question {
+  background-color: #eeedf1;
+  font-size: 4vw;
+  font-family: MPS;
+  color: #23234c;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 1.4em 0 1em 0;
+  padding: 1em 0;
+  box-shadow: rgba(0, 0, 0, 0.2) 0vw 0.5vw 0.5vw;
+}
+.container input {
+  font-size: 1em;
+  font-weight: 600;
+  width: 2.35em;
+  color: #23234c;
+  text-align: center;
+  font-family: MPS;
+  padding: 0 0.2em;
+  border: none;
+  background-color: transparent;
+  border-bottom: 0.12em solid #23234c;
+  margin: 0 0.25em;
+  
+}
+
+.Quest_Name{
+  font-size: 2vw;
+  font-family: MPS;
+  text-align: center;
+}
+.container input:focus {
+  border-color: #f4c531;
+  outline: none;
+}
+
+
+.Score_Title{
+  font-size: 3vw;
+  padding: 2vw;
+  background-color: white;
+  width: 20vw;
+  font-family: MPS;
+  text-align: left;
+  margin: 2vw;
+  border-radius: 1vw;
+  box-shadow: rgba(0, 0, 0, 0.1) 0vw 0.5vw 1vw;
+
+}
+/*Hide Number Arrows*/
+.container input[type="number"] {
+  -moz-appearance: textfield;
+}
+.container input[type="number"]::-webkit-outer-spin-button,
+.container input[type="number"]::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+.controls-container {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color:#f4c531 ;
+  flex-direction: column;
+  font-family: MPS;
+  height: 100%;
+  width: 100%;
+  top: 0;
+}
+#start-btn {
+  font-size: 3vw;
+  font-weight: 500;
+  background-color: #ffffff;
+  color: #23234c;
+  border: none;
+  outline: none;
+  font-family: MPS;
+  cursor: pointer;
+  position: relative;
+  bottom: -10vw;
+  padding: 0.8em 1.8em;
+  box-shadow: rgba(0, 0, 0, 0.1) 0vw 0.5vw 1vw;
+  border-radius: 0.3em;
+}
+#result {
+  margin-bottom: 1em;
+  font-family: MPS;
+  font-size: 1.5em;
+  color: #23234c;
+}
+#result span {
+  font-weight: 600;
+}
+
+.hide {
+  display: none;
+}
